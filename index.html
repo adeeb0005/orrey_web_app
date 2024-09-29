@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameUI">
+        <div id="score">Score: 0</div>
+        <div id="mission">Mission: Click on asteroids to mine them.</div>
+        <div id="missionDetails"></div>
+    </div>
+    <div id="timeSliderContainer">
+        <label for="timeSlider">Time Progression</label>
+        <input type="range" id="timeSlider" min="0.1" max="2" step="0.1" value="1">
+    </div>
+    
+    <!-- Load Audio Files -->
+    <audio id="miningSound" src="sounds/mining.mp3"></audio>
+    <audio id="deflectionSound" src="sounds/deflect.mp3"></audio>
+    <audio id="landingSound" src="sounds/landing.mp3"></audio>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/controls/OrbitControls.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
